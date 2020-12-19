@@ -4,6 +4,8 @@ require 'rails/test_help'
 require "minitest/reporters"
 Minitest::Reporters.use!
 
+include ApplicationHelper
+
 class ActiveSupport::TestCase
   # 特定のワーカーではテストをパラレル実行する
   parallelize(workers: :number_of_processors)
